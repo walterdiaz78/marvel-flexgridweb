@@ -1,0 +1,93 @@
+body{
+
+height: 100svh;
+background-color: black;
+margin: 0;
+
+
+}
+body main {
+    height: 82%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    
+
+    grid-template-areas:
+"a b c "
+"a d c "
+"e d f ";
+}
+
+
+
+ 
+section {
+    border-radius: 2rem;
+    filter:brightness(70%);
+    /* transition: all 50ms ease-in-out; */
+    box-shadow: rgba(60, 60, 105, 0.25) 0px 50px 100px -20px, rgba(29, 28, 28, 0.3) 0px 30px 60px -30px;
+
+}
+section:hover {
+    border-radius: 2rem;
+    filter: none;
+    background-size: 200%;
+}
+section:nth-child(1){
+    grid-area: a;
+    background-image: url(../media/images/hulk.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position:(0, -50px);
+    
+    
+}
+section:nth-child(2){
+    grid-area: b;
+    background-image: url(../media/images/ironman.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position:(0, 60px);
+}
+section:nth-child(3){
+    grid-area: c;
+    background-image: url(../media/images/capamerica.webp);
+    background-size: cover;
+    background-position:(0, -50px);
+}
+section:nth-child(4){
+    grid-area: d;
+    background-image: url(../media/images/spiderman.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:(0, -50px);
+}
+section:nth-child(5){
+    grid-area: e;
+    background-image: url(../media/images/thor.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+section:nth-child(6){
+    grid-area: f;
+    background-image: url(../media/images/wolverine.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+/* For Mobile Devices – 320px — 480px
+iPads and Tablets – 481px — 768px
+Laptops and small screen – 769px — 1024px
+Large screens and Desktops – 1025px — 1200px
+TV and Extra Large Screens – 1201px and more */
+
+
+
+    

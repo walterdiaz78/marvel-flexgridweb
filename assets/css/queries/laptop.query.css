@@ -1,0 +1,25 @@
+@media (480px <= width <800px) {
+    body {
+        height: 100vh;
+        /* background-image: url(../media/images/todos.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+        }
+    body main {
+        box-sizing: border-box;
+        height: 82%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        padding: 1rem; 
+        gap: 2rem;
+    
+        grid-template-areas:
+        "a a"
+        "b c"
+        "d e"
+        "d e"
+        "f f";
+    }
+}

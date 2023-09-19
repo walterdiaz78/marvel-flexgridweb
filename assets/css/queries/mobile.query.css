@@ -1,0 +1,27 @@
+@media (width < 480px){
+    body {
+        height: 200vh;
+    }
+    body main {
+        box-sizing: border-box;
+        height: 82%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        padding: 1rem
+        gap: 1rem;
+        
+        grid-template-areas:
+
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+        
+            }
+        
+    
+    
+}
